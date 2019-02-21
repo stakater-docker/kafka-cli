@@ -9,7 +9,8 @@ USER root
 
 RUN yum update -y
 
-RUN yum install -y jq
+RUN yum install -y epel-release && \
+    yum install -y jq
 
 ADD run.sh /opt/run.sh
 
