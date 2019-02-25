@@ -10,7 +10,7 @@ USER root
 RUN yum update -y
 
 RUN yum install -y epel-release && \
-    yum install -y git jq
+    yum install -y jq
 
 ADD run.sh /opt/run.sh
 
